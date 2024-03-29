@@ -70,7 +70,7 @@ class SubCustomerControllerTest {
 
         assertThat(createdSubCustomer.id()).isNotNull();
         assertThat(createdSubCustomer.customerId()).isEqualTo(UUID.fromString("06fbb35a-eba7-4179-a856-62da9c3b9375"));
-        assertThat(createdSubCustomer.taxId()).isEqualTo("DE999999999");
+        assertThat(createdSubCustomer.vatId()).isEqualTo("DE999999999");
         assertThat(createdSubCustomer.firstName()).isEqualTo("Jane");
         assertThat(createdSubCustomer.lastName()).isEqualTo("Doe");
         assertThat(createdSubCustomer.comment()).isEqualTo("Kommentar");

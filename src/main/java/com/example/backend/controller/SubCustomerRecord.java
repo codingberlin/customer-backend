@@ -5,7 +5,7 @@ import java.util.UUID;
 public record SubCustomerRecord(
         UUID id,
         UUID customerId,
-        String taxId,
+        String vatId,
         String firstName,
         String lastName,
         String comment,

@@ -15,7 +15,7 @@ public class SubCustomer {
     @UuidGenerator
     private UUID id;
     private UUID customerId;
-    private String taxId;
+    private String vatId;
     private String firstName;
     private String lastName;
     private String comment;
@@ -31,7 +31,7 @@ public class SubCustomer {
 
     public SubCustomer(
             final CustomerPrincipal principal,
-            final String taxId,
+            final String vatId,
             final String firstName,
             final String lastName,
             final String comment,
@@ -41,7 +41,7 @@ public class SubCustomer {
             final String addressCity,
             final String addressCountry) {
         this.customerId = principal.getCustomerId();
-        this.taxId = taxId;
+        this.vatId = vatId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.comment = comment;
@@ -56,7 +56,7 @@ public class SubCustomer {
         return new SubCustomerRecord(
                 this.id,
                 this.customerId,
-                this.taxId,
+                this.vatId,
                 this.firstName,
                 this.lastName,
                 this.comment,

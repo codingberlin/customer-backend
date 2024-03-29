@@ -9,7 +9,7 @@
 
 ## thoughts
 
-* one endpoint that validates the taxId can be used from several clients (browser, mobile, ...) so that only one team
+* one endpoint that validates the vatId can be used from several clients (browser, mobile, ...) so that only one team
   must maintain the validation rules
 
 ## development

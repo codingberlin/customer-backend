@@ -21,7 +21,7 @@ public class SubCustomerService {
     public SubCustomerRecord create(final CreateSubCustomerRequest request, final CustomerPrincipal principal) {
         final var subCustomerEntity = new SubCustomer(
                 principal,
-                request.taxId(),
+                request.vatId(),
                 request.firstName(),
                 request.lastName(),
                 request.comment(),

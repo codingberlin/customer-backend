@@ -5,7 +5,7 @@ import jakarta.validation.constraints.Size;
 
 public record CreateSubCustomerRequest(
 
-        @VatId String taxId,
+        @VatId String vatId,
         @NotNull String firstName,
         @NotNull String lastName,
         @Size(max = 100) String comment,
