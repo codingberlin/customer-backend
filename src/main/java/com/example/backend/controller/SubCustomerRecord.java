@@ -12,6 +12,7 @@ public record SubCustomerRecord(
         String addressStreet,
         String addressHouseNumber,
         String addressZipCode,
+        String addressCity,
         String addressCountry
 ) {
 }

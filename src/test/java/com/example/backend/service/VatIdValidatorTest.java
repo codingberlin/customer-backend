@@ -1,6 +1,5 @@
-package com.example.backend;
+package com.example.backend.service;
 
-import com.example.backend.service.VatIdValidator;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

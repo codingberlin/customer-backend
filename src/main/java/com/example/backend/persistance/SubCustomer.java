@@ -22,6 +22,7 @@ public class SubCustomer {
     private String addressStreet;
     private String addressHouseNumber;
     private String addressZipCode;
+    private String addressCity;
     private String addressCountry;
 
     public SubCustomer() {
@@ -37,6 +38,7 @@ public class SubCustomer {
             final String addressStreet,
             final String addressHouseNumber,
             final String addressZipCode,
+            final String addressCity,
             final String addressCountry) {
         this.customerId = principal.getCustomerId();
         this.taxId = taxId;
@@ -46,6 +48,7 @@ public class SubCustomer {
         this.addressStreet = addressStreet;
         this.addressHouseNumber = addressHouseNumber;
         this.addressZipCode = addressZipCode;
+        this.addressCity = addressCity;
         this.addressCountry = addressCountry;
     }
 
@@ -60,6 +63,7 @@ public class SubCustomer {
                 this.addressStreet,
                 this.addressHouseNumber,
                 this.addressZipCode,
+                this.addressCity,
                 this.addressCountry
         );
     }
