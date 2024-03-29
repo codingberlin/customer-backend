@@ -1,4 +1,5 @@
 test:
+	cd docker/test;	docker compose stop
 	cd docker/test;	docker compose rm -f
 	cd docker/test;	docker compose up -d 
 	sleep 10

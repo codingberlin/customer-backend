@@ -1,4 +1,4 @@
-package com.example.backend;
+package com.example.backend.controller;
 
 import jakarta.validation.constraints.NotNull;
 

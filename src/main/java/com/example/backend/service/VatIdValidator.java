@@ -1,11 +1,15 @@
-package com.example.backend;
+package com.example.backend.service;
 
+import com.example.backend.controller.ValidationResult;
+import com.example.backend.controller.VatId;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 import org.springframework.stereotype.Service;
 
 import java.util.regex.Pattern;
 
 @Service
-public class VatIdValidator {
+public class VatIdValidator implements ConstraintValidator<VatId, String> {
 
     private static final Pattern[] PATTERNS = {
             Pattern.compile("DE\\d{9}"),
@@ -15,6 +19,11 @@ public class VatIdValidator {
             Pattern.compile("GB([A-Z0-9]{5}|\\d{9}|\\d{12})"),
             Pattern.compile("FR[A-Z0-9]{2}\\d{9}")
     };
+
+    @Override
+    public boolean isValid(final String value, final ConstraintValidatorContext context) {
+        return isValid(value).isValid();
+    }
 
     // Because this is a demonstration, I didn't verify the rules with the Bundeszentralamt. e.g. GB has confusing rules at the Wikipedia page.
     // For production code I would verify accordingly

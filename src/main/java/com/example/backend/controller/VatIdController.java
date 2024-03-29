@@ -1,5 +1,6 @@
-package com.example.backend;
+package com.example.backend.controller;
 
+import com.example.backend.service.VatIdValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
