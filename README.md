@@ -28,6 +28,7 @@ make test
 ```
 
 Building the jar and docker image (skipping tests)
+(when your OS isn't macos, you might need to change the postgres url to "localhost" before bundling in (src/main/resources/application-production.properties)
 
 ```bash
 make bundle
